@@ -25,7 +25,7 @@ int main() {
 
 int ldsum(long n){
   //Pisano period is 60 for module of ten.
-  // F(n+2) equals to sum of F(n)-1 so computing F(n+2) will be enough.
+  // F(n+2) equals to sum of F(n)+1 so computing F(n+2)-1 will be enough.
   n = (n+2) % 60;
   int fib[n+1];
   fib[0]=0;
